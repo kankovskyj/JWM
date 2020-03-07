@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0B1D2E;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav .logo {
+  width: 150px;
+  height: 150px;
+  background-image: url(images/logodark.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  color: #F4C612;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.landing-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5vh;
+}
+
+.landing-content .content-left h1 {
+  font-size: 3.2rem;
+}
+
+.landing-content .content-left p {
+  font-size: 1.2rem;
+  margin-top: 2.6rem;
+  width: 80%;
+}
+
+.landing-content .content-left .button {
+  width: 12rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  margin-top: 3.2rem;
+  background-color: #FF8600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.landing-content .content-left .button:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  cursor: pointer;
+}
+
+.landing-content .content-right .geometry {
+  width: 500px;
+  height: 500px;
+  background-image: url(/images/geometry.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.landing-content .content-right .icons {
+  width: 400px;
+  height: 400px;
+  top: 2%;
+  left: 10%;
+  background-color: transparent;
+  background-image: url(/images/icons.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-content .about-icons .circle {
+  width: 300px;
+  height: 300px;
+  background-color: #F4C612;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.about-content .about-text {
+  margin-left: 8rem;
+}
+
+.about-content .about-text h1 {
+  font-size: 3.2rem;
+}
+
+.about-content .about-text p {
+  margin-top: 2.6rem;
+  font-size: 1.2rem;
+}
+
+.services-wrapper {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20vh;
+}
+
+.services-wrapper .services-content-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-wrapper .services-content-one .service {
+  background-color: coral;
+}
+
+.services-wrapper .services-content-one .service .service-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.services-wrapper .services-content-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
