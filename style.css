@@ -148,31 +148,85 @@ nav ul li a:hover {
   font-size: 1.2rem;
 }
 
-.services-wrapper {
+.services-content-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 80%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.services-wrapper .services-content-one {
+.services-content-one .service {
+  margin: 4rem;
+}
+
+.services-content-one .service .service-icon {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services-content-one .service .service-icon.one {
+  background-image: url(/images/handshake.png);
+}
+
+.services-content-one .service .service-icon.two {
+  background-image: url(/images/graph.png);
+}
+
+.services-content-one .service .service-icon.three {
+  background-image: url(/images/trade.png);
+}
+
+.services-content-one .service .service-text {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.services-content-two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.services-wrapper .services-content-one .service {
-  background-color: coral;
+.services-content-two .service {
+  margin: 4rem;
 }
 
-.services-wrapper .services-content-one .service .service-icon {
-  width: 50px;
-  height: 50px;
+.services-content-two .service .service-icon {
+  width: 150px;
+  height: 150px;
+  background-image: url(/images/acc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.services-wrapper .services-content-two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.services-content-two .service .service-icon.four {
+  background-image: url(/images/ppl.png);
+}
+
+.services-content-two .service .service-icon.five {
+  background-image: url(/images/computer.png);
+}
+
+.services-content-two .service .service-icon.six {
+  background-image: url(/images/lightbulb.png);
+}
+
+.services-content-two .service .service-text {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
