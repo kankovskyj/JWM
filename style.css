@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +98,7 @@ nav ul li a:hover {
 .landing-content .content-right .geometry {
   width: 500px;
   height: 500px;
-  background-image: url(/images/geometry.png);
+  background-image: url(images/geometry.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -107,7 +111,7 @@ nav ul li a:hover {
   top: 2%;
   left: 10%;
   background-color: transparent;
-  background-image: url(/images/icons.png);
+  background-image: url(images/icons.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -148,85 +152,90 @@ nav ul li a:hover {
   font-size: 1.2rem;
 }
 
-.services-content-one {
+.services-wrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-wrap .services-content-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 20vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.services-content-one .service {
-  margin: 4rem;
+.services-wrap .services-content-one .service {
+  width: 400px;
+  height: 400px;
+  text-align: center;
 }
 
-.services-content-one .service .service-icon {
+.services-wrap .services-content-one .service .service-icon {
+  margin-left: auto;
+  margin-right: auto;
   width: 150px;
   height: 150px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.services-content-one .service .service-icon.one {
-  background-image: url(/images/handshake.png);
+.services-wrap .services-content-one .service .service-icon.one {
+  background-image: url(images/handshake.png);
 }
 
-.services-content-one .service .service-icon.two {
-  background-image: url(/images/graph.png);
+.services-wrap .services-content-one .service .service-icon.two {
+  background-image: url(images/graph.png);
 }
 
-.services-content-one .service .service-icon.three {
-  background-image: url(/images/trade.png);
+.services-wrap .services-content-one .service .service-icon.three {
+  background-image: url(images/trade.png);
 }
 
-.services-content-one .service .service-text {
+.services-wrap .services-content-one .service .service-text {
   margin-top: 1.5rem;
   font-size: 1.2rem;
 }
 
-.services-content-two {
+.services-wrap .services-content-two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.services-content-two .service {
-  margin: 4rem;
+.services-wrap .services-content-two .service {
+  width: 400px;
+  height: 400px;
+  text-align: center;
 }
 
-.services-content-two .service .service-icon {
+.services-wrap .services-content-two .service .service-icon {
   width: 150px;
   height: 150px;
-  background-image: url(/images/acc.png);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/acc.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.services-content-two .service .service-icon.four {
-  background-image: url(/images/ppl.png);
+.services-wrap .services-content-two .service .service-icon.four {
+  background-image: url(images/ppl.png);
 }
 
-.services-content-two .service .service-icon.five {
-  background-image: url(/images/computer.png);
+.services-wrap .services-content-two .service .service-icon.five {
+  background-image: url(images/computer.png);
 }
 
-.services-content-two .service .service-icon.six {
-  background-image: url(/images/lightbulb.png);
+.services-wrap .services-content-two .service .service-icon.six {
+  background-image: url(images/lightbulb.png);
 }
 
-.services-content-two .service .service-text {
+.services-wrap .services-content-two .service .service-text {
   margin-top: 1.5rem;
   font-size: 1.2rem;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=style.css.map */

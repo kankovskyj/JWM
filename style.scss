@@ -5,6 +5,9 @@ $def-orange: #FF8600;
 $def-yellow: #F4C612;
 $def-transition: 0.4s;
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -82,7 +85,7 @@ nav {
         .geometry {
             width: 500px;
             height: 500px;
-            background-image: url(/images/geometry.png);
+            background-image: url(images/geometry.png);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -94,7 +97,7 @@ nav {
             top: 2%;
             left: 10%;
             background-color: transparent;
-            background-image: url(/images/icons.png);
+            background-image: url(images/icons.png);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -131,31 +134,33 @@ nav {
     }
 }
 
-
-
+.services-wrap {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     .services-content-one {
         display: flex;
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
         margin-top: 20vh;
-        justify-content: space-between;
         .service {
-            margin: 4rem;
+            width: 400px;
+            height: 400px;
+            text-align: center;
             .service-icon {
+                margin-left: auto;
+                margin-right: auto;
                 width: 150px;
                 height: 150px;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
             .service-icon.one {
-                background-image: url(/images/handshake.png);
+                background-image: url(images/handshake.png);
             }
             .service-icon.two {
-                background-image: url(/images/graph.png);
+                background-image: url(images/graph.png);
             }
             .service-icon.three {
-                background-image: url(/images/trade.png);
+                background-image: url(images/trade.png);
             }
             .service-text {
                 margin-top: 1.5rem;
@@ -167,33 +172,36 @@ nav {
     
     .services-content-two {
         display: flex;
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-        justify-content: space-between;
         .service {
-            margin: 4rem;
+            width: 400px;
+            height: 400px;
+            text-align: center;
             .service-icon {
                 width: 150px;
                 height: 150px;
-                background-image: url(/images/acc.png);
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url(images/acc.png);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
             .service-icon.four {
-                background-image: url(/images/ppl.png);
+                background-image: url(images/ppl.png);
             }
             .service-icon.five {
-                background-image: url(/images/computer.png);
+                background-image: url(images/computer.png);
             }
             .service-icon.six {
-                background-image: url(/images/lightbulb.png);
+                background-image: url(images/lightbulb.png);
             }
             .service-text {
                 margin-top: 1.5rem;
                 font-size: 1.2rem;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     
     }
-
+}
