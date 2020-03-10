@@ -205,3 +205,49 @@ nav {
     
     }
 }
+
+.contact-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    .content-left {
+        .contact-heading {
+            font-size: 4rem;
+        }
+        .contact-details {
+            margin-top: 15vh;
+            i {
+                font-size: 2rem;
+            }
+            i:nth-of-type(4) {
+                font-size: 1rem;
+            }
+            p {
+            }
+        }
+
+    }
+    .content-right {
+        margin-top: 10vh;
+        h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8vh;
+        }
+        input {
+            width: 18rem;
+            height: 2.2rem;
+            margin-bottom: 3.5vh;
+            background-color: white;
+            color: $def-blue;
+            font-size: 1rem;
+            padding-left: 10px;
+        }
+        input:nth-of-type(3) {
+            width: 28rem;
+            height: 10rem;
+
+        }
+    }
+}
