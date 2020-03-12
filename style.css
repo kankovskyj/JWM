@@ -5,9 +5,12 @@ html {
 * {
   margin: 0;
   padding: 0;
-  background-color: #0B1D2E;
   font-family: "Montserrat", sans-serif;
   color: white;
+}
+
+body {
+  background-color: #0B1D2E;
 }
 
 nav {
@@ -28,7 +31,7 @@ nav {
 nav .logo {
   width: 150px;
   height: 150px;
-  background-image: url(images/logodark.png);
+  background-image: url(images/jwm-logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -286,8 +289,13 @@ nav ul li a:hover {
   padding-left: 10px;
 }
 
+.contact-wrapper .content-right .fieldset {
+  border: none;
+}
+
 .contact-wrapper .content-right input:nth-of-type(3) {
   width: 28rem;
   height: 10rem;
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

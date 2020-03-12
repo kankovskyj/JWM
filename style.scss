@@ -12,9 +12,12 @@ html {
 * {
     margin: 0;
     padding: 0;
-    background-color: $def-blue;
     font-family: $def-font;
     color: white;
+}
+
+body {
+    background-color: $def-blue;
 }
 
 nav {
@@ -27,7 +30,7 @@ nav {
     .logo {
         width: 150px;
         height: 150px;
-        background-image: url(images/logodark.png);
+        background-image: url(images/jwm-logo.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -244,10 +247,13 @@ nav {
             font-size: 1rem;
             padding-left: 10px;
         }
+        .fieldset {
+            border: none;
+        }
         input:nth-of-type(3) {
             width: 28rem;
             height: 10rem;
-
+            padding-bottom: 2rem;
         }
     }
 }
