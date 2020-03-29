@@ -381,8 +381,8 @@ nav ul li a:hover {
     margin-right: auto;
   }
   nav .logo {
-    min-width: 70px;
-    min-height: 70px;
+    width: 90px;
+    height: 90px;
     background-image: url(images/logodark.png);
     background-position: center;
     background-size: contain;
@@ -399,7 +399,7 @@ nav ul li a:hover {
   }
   nav ul li a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   nav ul li a:hover {
     color: #F4C612;
