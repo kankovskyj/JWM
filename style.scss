@@ -18,6 +18,8 @@ html {
 
 body {
     background-color: $def-blue;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 nav {
@@ -30,7 +32,7 @@ nav {
     .logo {
         width: 150px;
         height: 150px;
-        background-image: url(images/jwm-logo.png);
+        background-image: url(images/logodark.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -141,13 +143,21 @@ nav {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+
     .services-content-one {
         display: flex;
         margin-top: 20vh;
+        justify-content: space-between;
+        width: 100%;
         .service {
-            width: 400px;
-            height: 400px;
+            width: 300px;
+            height: 200px;
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
             .service-icon {
                 margin-left: auto;
                 margin-right: auto;
@@ -175,10 +185,15 @@ nav {
     
     .services-content-two {
         display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 4rem;
         .service {
-            width: 400px;
-            height: 400px;
+            width: 300px;
+            height: 200px;
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
             .service-icon {
                 width: 150px;
                 height: 150px;
@@ -200,9 +215,7 @@ nav {
             .service-text {
                 margin-top: 1.5rem;
                 font-size: 1.2rem;
-                width: 300px;
-                margin-left: auto;
-                margin-right: auto;
+                
             }
         }
     
@@ -213,6 +226,7 @@ nav {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
     .content-left {
@@ -220,40 +234,117 @@ nav {
             font-size: 4rem;
         }
         .contact-details {
-            margin-top: 15vh;
-            i {
-                font-size: 2rem;
-            }
-            i:nth-of-type(4) {
-                font-size: 1rem;
-            }
-            p {
+            margin-top: 10vh;
+            .info-wrap {
+                margin-top: 2rem;
+                i {
+                    font-size: 4rem;
+                    margin-right: 5rem;
+                }
+                a {
+                    font-size: 1.5rem;
+                }
+                p {
+                    display: inline;
+                    font-size: 2.2rem;
+                    margin-right: 5rem;
+                }
             }
         }
 
     }
-    .content-right {
-        margin-top: 10vh;
-        h4 {
-            font-size: 1.3rem;
-            margin-bottom: 0.8vh;
-        }
-        input {
-            width: 18rem;
-            height: 2.2rem;
-            margin-bottom: 3.5vh;
-            background-color: white;
-            color: $def-blue;
-            font-size: 1rem;
-            padding-left: 10px;
-        }
-        .fieldset {
-            border: none;
-        }
-        input:nth-of-type(3) {
-            width: 28rem;
-            height: 10rem;
-            padding-bottom: 2rem;
+}
+
+
+//RESPONSIVE
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+	html {
+		font-size: 14px;
+    }
+    .geometry {
+        display: none;
+    }
+    .about-icons {
+        display: none;
+    }
+
+    .about-content .about-text {
+        margin-left: 0rem;
+        h1 {
+            font-size: 2rem;
         }
     }
-}
+  
+    .services-content-one {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1rem;
+        .service {
+            margin-top: 5rem;
+        }
+    }
+    .services-content-two {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+        .service {
+            margin-top: 5rem;
+        }
+    }
+    .contact-wrapper .content-left .contact-heading {
+        font-size: 2.3rem;
+    }
+    .contact-wrapper .content-left .contact-details .info-wrap p {
+        font-size: 1.8rem;
+        margin-right: 1.2rem;
+
+    }
+    .contact-wrapper .content-left .contact-details .info-wrap i {
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+    .contact-wrapper .content-left .contact-details .info-wrap a {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        .logo {
+            min-width: 70px;
+            min-height: 70px;
+            background-image: url(images/logodark.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            li {
+                margin-left: 1rem;
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                }
+                a:hover {
+                    color: $def-yellow;
+                    transition: $def-transition;
+                }
+            }
+        }
+    }
+
+
+
+  }
