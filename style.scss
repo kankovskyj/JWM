@@ -70,6 +70,7 @@ nav {
             width: 80%;
         }
         .button {
+            display: block;
             width: 12rem;
             height: 3rem;
             line-height: 3rem;
@@ -79,6 +80,7 @@ nav {
             margin-top: 3.2rem;
             background-color: $def-orange;
             transition: $def-transition;
+            text-decoration: none;
         }
         .button:hover {
             filter: brightness(110%);

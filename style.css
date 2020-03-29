@@ -82,6 +82,7 @@ nav ul li a:hover {
 }
 
 .landing-content .content-left .button {
+  display: block;
   width: 12rem;
   height: 3rem;
   line-height: 3rem;
@@ -92,6 +93,7 @@ nav ul li a:hover {
   background-color: #FF8600;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  text-decoration: none;
 }
 
 .landing-content .content-left .button:hover {
